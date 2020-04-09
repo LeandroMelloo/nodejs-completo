@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if ((50 > 10) || (600 < 10)) {
+            alert('Is true')
+            console.log('Is true')
+        }
+
+        var num1 = prompt('Number 1:')
+        var num2 = prompt('Number 2:')
+        var op = prompt('Operation: ')
+
+        num1 = parseFloat(num1)
+        num2 = parseFloat(num2)
+
+        if (op == '+') {
+            alert(num1 + num2)
+        } else if (op == '-') {
+            alert(num1 - num2)
+        } else if (op == '*') {
+            alert(num1 * num2)
+        } else if (op == '/') {
+            alert(num1 / num2)
+        } else {
+            alert('Operation not found')
+            console.error('Operation not found')
+        }
+    </script>
+</body>
+</html>

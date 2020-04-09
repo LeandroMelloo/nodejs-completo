@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function square(num) {
+            return num * num
+        }
+        const result = square(6)
+        alert(result)
+
+//==============escopo global=============================//
+        var number = 5 // vai ser ignorado
+        var number = 10 // vai ser o valor utilizado
+
+        function raiz(num) {
+            return num * num
+        }
+        const res = raiz(number)
+        alert(res) 
+    </script>
+</body>
+</html>

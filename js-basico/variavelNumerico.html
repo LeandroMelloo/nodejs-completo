@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var number = 10.00 // '10.00' / "10.00"
+        alert(number)
+
+        // estou alterando um tipo numerico pra string.
+        number.toString()
+        alert(number)
+
+        var bool = 10.20
+        alert(bool) // saida = 10.20
+
+        // estou alterando um tipo float para inteiro.
+        bool = parseInt(bool)
+        alert(bool) // saida = 10
+
+        number1 = 5
+        alert(number1)
+
+        // estou alterando um tipo inteiro para float.
+        number1 = parseFloat(number1)
+        alert(number1) // saida = 5
+
+        // estou alterando um tipo inteiro para float.
+        number1 = parseFloat(number1).toFixed(2) // obrigo o javascript acrescentar duas casas decimais depois da virgula.
+        alert(number1) // saida = 5.00
+
+        // estou alterando um tipo inteiro para float.
+        number1 = parseFloat(number1).toPrecision(3) // obrigo o javascript acrescentar duas casas decimais depois da virgula com precisão.
+        alert(number1) // saida = 5.00
+
+        // gera numeros de forma randomica.
+        var random = Math.random()
+        alert(random)
+
+        // gera numeros de forma randomica, mas nunca passa de 6.
+        var random1 = Math.round(Math.random() * 6)
+        alert(random1)
+
+        // gera numeros de forma randomica, mas nunca passa de 6 e trunca os valores.
+        var random1 = Math.trunc(Math.random() * 6)
+        alert(random1)
+
+        // retorna PI.
+        var random1 = Math.PI
+        alert(random1)
+    </script>
+</body>
+</html>

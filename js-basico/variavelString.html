@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // criando a variavel 'name' e atribuindo o valor 'Leandro'
+        // criando a variavel 'lastname' e atribuindo o valor 'Mello'
+        var name = 'Leandro'
+        var lastname = 'Mello'
+        var number = 10
+
+        alert(number.toString())
+
+        alert(name)
+
+        // o nome ficará minuscula = 'leandro mello'
+        name = name.toLowerCase()
+        alert(name)
+
+        // o nome ficará maiscula = 'LEANDRO MELLO'
+        name = name.toUpperCase()
+        alert(name)
+    
+        // concatenando duas variaveis
+        var fullname = name.concat(' ').concat(lastname)
+        alert(fullname)
+
+        // concatenando duas variaveis de outra forma, e trocando a letra 'l' por 's'. Final sairá 'LEANDRO Meslo'
+        var fullname1 = name + ' ' + lastname.replace('l', 's')
+        alert(fullname1)
+
+    </script>
+</body>
+</html>
