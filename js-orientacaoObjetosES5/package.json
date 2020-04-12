@@ -1,0 +1,14 @@
+{
+  "name": "js-orientacaoobjetoses5",
+  "version": "1.0.0",
+  "description": "OOP Javascript",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server"
+  },
+  "author": "Leandro Mello",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.12.1"
+  }
+}

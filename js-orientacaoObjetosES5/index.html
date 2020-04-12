@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>OOP Javascript</p>
+    <script>
+        function Pessoa() {
+            this.nome
+            this.idade
+            this.altura
+
+            this.sayHello = function(nome) {
+                console.log(('Hello ').concat(nome))
+            }
+
+            this.hello = function hello(nome) {
+                console.log(('Hello ').concat(nome))
+            }
+
+            this.getNome = function getNome() {
+                return this.nome
+            }
+
+            this.setNome = function setNome(_nome) {
+                this.nome = _nome
+            }
+
+            this.getIdade = function() {
+                return this.idade
+            }
+
+            this.setIdade = function(_idade) {
+                this.idade = _idade
+            }
+
+            this.getAltura = function() {
+                return this.altura
+            }
+
+            this.setAltura = function(_altura) {
+                this.altura = _altura
+            }
+        }
+
+        var atributos = new Pessoa()
+        atributos.setNome('Leandro');
+        atributos.setIdade(34);
+        atributos.setAltura(1.89);
+        atributos.sayHello(atributos.getNome());
+        atributos.hello(atributos.getNome());
+
+        var atributosNew = new Pessoa()
+        atributosNew.setNome('Luciana');
+        atributosNew.setIdade(35);
+        atributosNew.setAltura(parseFloat((1.73).toFixed(2)));
+        atributosNew.sayHello(atributosNew.getNome());
+        atributosNew.hello(atributosNew.getNome())
+
+        console.log(atributos)
+        console.log(atributosNew)
+    </script>
+</body>
+</html>
